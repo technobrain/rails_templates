@@ -1,4 +1,4 @@
-# rails new . --database=postgresql -T --skip-turbolinks -m https://raw.github.com/technobrain/rails_templates/master/5.1/templates_basic_app.rb
+# bin/rails new . --database=postgresql -T --skip-turbolinks -m https://raw.github.com/technobrain/rails_templates/master/5.1/templates_basic_app.rb
 
 gsub_file 'Gemfile', /^gem 'turbolinks'.+/, ""
 gsub_file 'Gemfile', /^gem 'jbuilder'.+/, ""
@@ -13,9 +13,9 @@ gem 'sorcery'
 gem 'pundit'
 # Queue adapter
 gem 'sidekiq'
-gem 'listen', '>= 3.0.5', '< 3.2'
+gem 'listen', '~3.1'
 
-group :development, :test do
+gem_group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger
   # console
   gem 'byebug', platforms: %i[mri mingw x64_mingw]
@@ -27,7 +27,7 @@ group :development, :test do
   gem 'rubocop', require: false
 end
 
-group :development do
+gem_group :development do
   # Spring speeds up development by keeping your application running
   # in the background. Read more: https://github.com/rails/spring
   gem 'spring'
