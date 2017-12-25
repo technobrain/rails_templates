@@ -13,7 +13,7 @@ gem 'sorcery'
 gem 'pundit'
 # Queue adapter
 gem 'sidekiq'
-gem 'listen', '~3.1'
+gem 'listen', '~> 3.1'
 
 gem_group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger
