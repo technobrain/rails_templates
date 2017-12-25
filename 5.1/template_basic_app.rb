@@ -1,4 +1,4 @@
-# rails new . --database=postgresql --skip-turbolinks -m https://raw.github.com/technobrain/rails_templates/master/5.1/templates_basic_app.rb
+# rails new . --database=postgresql -T --skip-turbolinks -m https://raw.github.com/technobrain/rails_templates/master/5.1/templates_basic_app.rb
 
 gsub_file 'Gemfile', /^gem 'turbolinks'.+/, ""
 gsub_file 'Gemfile', /^gem 'jbuilder'.+/, ""
@@ -44,7 +44,7 @@ web: bin/rails s -p 3000
 webpacker: bin/webpack-dev-server
 EOF
 
-run 'bundle install'
+run 'bundle install --path vendor/bundle'
 rake 'db:create'
 rake 'db:migrate'
 
