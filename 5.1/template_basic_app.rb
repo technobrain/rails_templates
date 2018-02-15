@@ -1,4 +1,4 @@
-# bin/rails new . --database=postgresql -T --skip-turbolinks -m https://raw.github.com/technobrain/rails_templates/master/5.1/templates_basic_app.rb
+# bundle exec rails new . --database=postgresql -T --skip-turbolinks -m https://raw.github.com/technobrain/rails_templates/master/5.1/templates_basic_app.rb
 
 gsub_file 'Gemfile', /^gem 'turbolinks'.+/, ""
 gsub_file 'Gemfile', /^gem 'jbuilder'.+/, ""
@@ -14,6 +14,8 @@ gem 'sorcery'
 gem 'pundit'
 # Queue adapter
 gem 'sidekiq'
+
+# listen は development, testグループに限定しない
 gem 'listen', '~> 3.1.0'
 
 gem_group :development, :test do
