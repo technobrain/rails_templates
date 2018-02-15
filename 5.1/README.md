@@ -25,7 +25,7 @@ $ bin/rails webpacker:install
 # 当然DBが稼働していることが前提
 $ bin/rails db:create
 
-# foreman をつかってサーバーを起動する場合
+# foremanでサーバーを起動する場合
 $ bundle binstubs bundler --force
 を実行しておく必要あり
 
