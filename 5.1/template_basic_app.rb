@@ -51,11 +51,11 @@ run 'bundle install --path vendor/bundle'
 rake 'db:create'
 # rake 'db:migrate'
 
-bundle binstubs bundler --force
+run 'bundle binstubs bundler --force'
 
-bundle exec foreman start
+run 'bundle exec foreman start'
 
-open http://localhost:3000
+run 'open http://localhost:3000'
 
 say <<-SAY
 ============================================================================
