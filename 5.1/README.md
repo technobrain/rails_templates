@@ -15,7 +15,7 @@ $ git init
 $ git add Gemfile
 $ git commit -m 'rails install'
 
-$ bundle exec rails new . --database=mysql -T --skip-turbolinks -m https://raw.githubusercontent.com/technobrain/rails_templates/master/5.1/template_basic_app.rb
+$ bundle exec rails new . --webpack=react --database=mysql -T --skip-turbolinks -m https://raw.githubusercontent.com/technobrain/rails_templates/master/5.1/template_basic_app.rb
 
 # .gitignoreを編集してコミット（/vendor/bundleを追加しておくなど）
 
