@@ -1,4 +1,4 @@
-# bundle exec rails new . --database=postgresql -T --skip-turbolinks -m https://raw.github.com/technobrain/rails_templates/master/5.1/templates_basic_app.rb
+# bundle exec rails new . --webpacker=react --database=postgresql -T --skip-turbolinks -m https://raw.github.com/technobrain/rails_templates/master/5.1/templates_basic_app.rb
 
 gsub_file 'Gemfile', /^gem 'turbolinks'.+/, ""
 gsub_file 'Gemfile', /^gem 'jbuilder'.+/, ""
@@ -6,7 +6,7 @@ gsub_file 'Gemfile', /^gem 'coffee-rails'.+/, ""
 gsub_file 'Gemfile', /^gem 'jbuilder'.+/, ""
 gsub_file 'Gemfile', /^  gem 'listen'.+/, ""
 
-gem 'webpacker', '~> 3.0'
+# gem 'webpacker', '~> 3.0'
 gem 'seed-fu'
 # Authentication
 gem 'sorcery'
@@ -48,8 +48,8 @@ webpacker: bin/webpack-dev-server
 EOF
 
 run 'bundle install --path vendor/bundle'
-rake 'db:create'
-rake 'db:migrate'
+# rake 'db:create'
+# rake 'db:migrate'
 
 say <<-SAY
 ============================================================================
