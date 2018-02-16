@@ -3,6 +3,7 @@
 前提条件
 * Databaseがインストールされている
 * yarnがインストールされている（Webpackerで利用）
+* nodejsがインストールされている（V8がインストールされている、therubyracerが不要）
 
 ```
 $ mkdir rails_app
