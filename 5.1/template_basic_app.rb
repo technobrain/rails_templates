@@ -55,8 +55,6 @@ run 'bundle binstubs bundler --force'
 
 run 'bundle exec foreman start'
 
-run 'open http://localhost:3000'
-
 say <<-SAY
 ============================================================================
   template applied
