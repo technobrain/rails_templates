@@ -1,5 +1,9 @@
 # rails_templates
 
+前提条件
+* Databaseがインストールされている
+* yarnがインストールされている（Webpackerで利用）
+
 ```
 $ mkdir rails_app
 $ cd rails_app
@@ -18,9 +22,6 @@ $ git commit -m 'rails install'
 $ bundle exec rails new . --webpack=react --database=mysql -T --skip-turbolinks -m https://raw.githubusercontent.com/technobrain/rails_templates/master/5.1/template_basic_app.rb
 
 # .gitignoreを編集してコミット（/vendor/bundleを追加しておくなど）
-
-# Webpackerのインストール（yarnがインストールされていないとエラー）
-$ bin/rails webpacker:install
 
 # 当然DBが稼働していることが前提
 $ bin/rails db:create

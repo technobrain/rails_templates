@@ -48,8 +48,14 @@ webpacker: bin/webpack-dev-server
 EOF
 
 run 'bundle install --path vendor/bundle'
-# rake 'db:create'
+rake 'db:create'
 # rake 'db:migrate'
+
+bundle binstubs bundler --force
+
+bundle exec foreman start
+
+open http://localhost:3000
 
 say <<-SAY
 ============================================================================
