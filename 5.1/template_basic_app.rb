@@ -48,15 +48,15 @@ webpacker: bin/webpack-dev-server
 EOF
 
 run 'bundle install --path vendor/bundle'
-rake 'db:create'
-# rake 'db:migrate'
 
-run 'bundle binstubs bundler --force'
+after_bundle do
+  rake 'db:create'
+  run 'bundle binstubs bundler --force'
+  run 'bundle exec foreman start'
 
-run 'bundle exec foreman start'
-
-say <<-SAY
-============================================================================
+  say <<-SAY
+  ============================================================================
   template applied
-============================================================================
-SAY
+  ============================================================================
+  SAY
+end
