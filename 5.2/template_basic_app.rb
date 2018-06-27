@@ -3,7 +3,6 @@
 gsub_file 'Gemfile', /^gem 'jbuilder'.+/, ""
 gsub_file 'Gemfile', /^gem 'coffee-rails'.+/, ""
 
-gem 'webpacker', '~> 3.5'
 gem 'seed-fu'
 # Authentication
 gem 'sorcery'

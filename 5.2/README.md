@@ -20,7 +20,7 @@ $ git init
 $ git add Gemfile
 $ git commit -m 'rails install'
 
-$ bundle exec rails new . --webpack=react --database=postgresql -m https://raw.githubusercontent.com/technobrain/rails_templates/master/5.2/template_basic_app.rb
+$ bundle exec rails new . --webpack=stimulus --database=postgresql -m https://raw.githubusercontent.com/technobrain/rails_templates/master/5.2/template_basic_app.rb
 
 # .gitignoreを編集してコミット（/vendor/bundleを追加しておくなど）
 
