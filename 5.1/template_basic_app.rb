@@ -3,7 +3,6 @@
 gsub_file 'Gemfile', /^gem 'turbolinks'.+/, ""
 gsub_file 'Gemfile', /^gem 'jbuilder'.+/, ""
 gsub_file 'Gemfile', /^gem 'coffee-rails'.+/, ""
-gsub_file 'Gemfile', /^gem 'jbuilder'.+/, ""
 gsub_file 'Gemfile', /^  gem 'listen'.+/, ""
 
 # gem 'webpacker', '~> 3.0'
