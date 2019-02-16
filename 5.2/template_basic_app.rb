@@ -31,6 +31,9 @@ gem_group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger
   # console
   gem 'byebug', platforms: %i[mri mingw x64_mingw]
+
+  # Exists N+1 queries, unused eager loding
+  gem 'bullet'
 end
 
 gem_group :test do
