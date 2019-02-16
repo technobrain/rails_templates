@@ -8,7 +8,7 @@
 ```
 $ mkdir rails_app
 $ cd rails_app
-$ rbenv local 2.5.1
+$ rbenv local 2.6.1
 
 $ echo "source 'https://rubygems.org'" > Gemfile
 $ echo "gem 'rails'" >> Gemfile
@@ -27,10 +27,5 @@ $ bundle exec rails new . --webpack=stimulus --database=postgresql -m https://ra
 # 当然DBが稼働していることが前提
 $ bin/rails db:create
 
-# foremanでサーバーを起動する場合
-$ bundle binstubs bundler --force
-を実行しておく必要あり
-
-$ bundle exec foreman start
 
 ```
