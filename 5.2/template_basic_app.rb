@@ -19,7 +19,8 @@ gem 'listen', '~> 3.1.0'
 gem 'swagger_ui_engine'
 gem 'swagger-blocks'
 gem 'swagger_codegen_rails'
-gem 'uikit_admin_rails', github: 'technobrain/uikit_admin_rails', branch: 'feature/layout'
+# gem 'uikit_admin_rails', github: 'technobrain/uikit_admin_rails', branch: 'feature/layout'
+gem 'ukstyle', github: 'technobrain/ukstyle', branch: 'develop'
 
 # Statemachine
 gem 'aasm'
