@@ -21,6 +21,7 @@ gem 'swagger-blocks'
 gem 'swagger_codegen_rails'
 # gem 'uikit_admin_rails', github: 'technobrain/uikit_admin_rails', branch: 'feature/layout'
 gem 'ukstyle', github: 'technobrain/ukstyle', branch: 'develop'
+gem 'unicorn'
 
 # Statemachine
 gem 'aasm'
