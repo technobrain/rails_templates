@@ -64,7 +64,8 @@ gem_group :development do
 end
 
 run 'bundle install'
-rake 'db:create'
+rails_command 'webpacker:install:stimulus'
+rails_command 'db:create'
 
 environment "config.i18n.load_path += Dir[Rails.root.join('config', 'locales', '**', '*.{rb,yml}').to_s]"
 environment "config.i18n.default_locale = :ja"
