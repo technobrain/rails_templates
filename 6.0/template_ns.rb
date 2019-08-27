@@ -1,4 +1,4 @@
-# rails new . --database=postgresql -m https://raw.github.com/technobrain/rails_templates/master/6.0/templates_ns.rb
+# rails new . --database=postgresql -m https://raw.githubusercontent.com/technobrain/rails_templates/master/6.0/template_ns.rb
 
 gsub_file 'Gemfile', /^gem 'jbuilder'.+/, ""
 gsub_file 'Gemfile', /^gem 'coffee-rails'.+/, ""
